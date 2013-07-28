@@ -1,0 +1,30 @@
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+
+    <!-- Any template that you want to appear when you run `mvn archetype:generate`
+         needs to be listed in this file. -->
+
+    <id>quickstart</id>
+
+    <!-- Templates for Java sources: -->
+    <sources>
+        <source>src/main/java/Placeholder.java</source>
+    </sources>
+
+    <!-- Templates for Java test sources: -->
+    <testSources>
+        <source>src/test/java/PlaceholderTest.java</source>
+    </testSources>
+
+    <!-- Templates for resources (bean config, properties, etc...): -->
+    <resources>
+        <resource>src/main/resources/application-config.xml</resource>
+        <resource>src/main/resources/application.properties</resource>
+    </resources>
+
+    <!-- Templates for test resources (bean config, properties, etc...): -->
+    <testResources>
+        <resource>src/test/resources/application-config-test.xml</resource>
+    </testResources>
+
+</archetype>
