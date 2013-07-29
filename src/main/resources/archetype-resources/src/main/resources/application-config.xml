@@ -10,11 +10,15 @@
                            http://www.springframework.org/schema/util
                            http://www.springframework.org/schema/util/spring-util-3.2.xsd">
 
+    <!-- Component scan lets you replace some XML configuration with annotations
+         like @Component -->
     <context:component-scan base-package="${package}" />
 
+    <!-- Create a bean using constructor injection. -->
     <bean class="${package}.Placeholder"
           c:greetName="${greetName}" />
 
+    <!-- Load our properties file. -->
     <context:property-placeholder location="application.properties"/>
 
 </beans>
